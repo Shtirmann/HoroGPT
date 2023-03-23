@@ -14,7 +14,7 @@ async def PostMessage():
                                           prompt=prompt[0],
                                           temperature=prompt[1],
                                           max_tokens=1024)
-    await bot.send_message(text=completion["choices"][0]["text"],
+    await bot.send_message(text=completion["choices"][0]["text"].replace('\\n', ''),
                            chat_id=-1001806378959,
                            parse_mode='HTML')
     # print(prompt[1])
