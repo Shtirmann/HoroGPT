@@ -18,8 +18,8 @@ async def PostMessage():
                            chat_id=-1001806378959,
                            parse_mode='HTML')
     # print(prompt[1])
-    await asyncio.sleep(86400)  # 24 часа в секундах
     await bot.close()
+    await asyncio.sleep(86400)  # 24 часа в секундах
 
 
 while True:
